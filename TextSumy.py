@@ -18,7 +18,10 @@ def summary(url):
     SENTENCES_COUNT = 0
     for sent in parser.document.sentences:
         SENTENCES_COUNT += 1
-    SENTENCES_COUNT /= 3
+    if(SENTENCES_COUNT > 30):
+        SENTENCES_COUNT /= 2
+    if(SENTENCES_COUNT > 50):
+        SENTENCES_COUNT /= 3
     summarizer = Summarizer(stemmer)
     summarizer.stop_words = get_stop_words(LANGUAGE)
     res = []

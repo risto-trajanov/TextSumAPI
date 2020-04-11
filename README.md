@@ -6,7 +6,8 @@
 * [Setup](#setup)
 
 ## General info
-School project for web development.
+Risto Trajanov 171523  
+School project for web development(FINKI).    
 Text summarization on web pages using their urls as input and giving the summary as output. 
 	
 ## Technologies
